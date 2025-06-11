@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photographer Portfolio</title>
+
+    <!-- external link for font-awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- external link for poppins Font Family -->
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/home.css" />
+
+
+</head>
+
+<body>
+    <!-- NAVIGATION Section -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo-wrapper">
+                <a class="logo" href="index.html"><strong>SIMI</strong>Tech</a>
+            </div>
+            <div id="navigations">
+                <ul class="navbar-links" id="navbar-links">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li>
+                        <button id="darkTheme">
+                            <i id="themeIcon" class="fa-solid fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hamburger-menu" id="hamburgerButton">
+                <i id="hamburgerIcon" class="fa-solid fa-bars-staggered"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </div>
+
+        </div>
+
+
+
+        </div>
+    </nav>
+
+
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- HEADER/NAVIGATION Section -->
+        <header class="header">
+            <div class="container">
+                <div class="box">
+                    <h4>Hello there!</h4>
+                    <h1 class="first-title header-one" id="title-one">Hey There I am Joseph</h1>
+                    <p>
+                        I am a professional photographer based in San Francisco,
+                        creating dreamscapes with black, white, and shades in-between.
+                    </p>
+                    <a href="#" class="btn">My works</a>
+                    <a href="#" class="btn">Contact me</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ABOUT-ME Section -->
+        <section class="about bg-light" id="about">
+            <div class="container">
+                <div class="box">
+                    <h2 class="title first-title about-title">
+                        SimiTech Photographer
+                        <span>Loves to create memory and beautiful story.</span>
+                    </h2>
+                    <p id="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu dictum arcu.
+                        Aenean viverra venenatis elit, vitae dignissim augue consectetur ac.
+                        Quisque eu cursus nisi, convallis pulvinar magna.
+                    </p>
+                    <ul>
+                        <li><i class="fa fa-check"></i><span>Over 5 years of experience</span></li>
+                        <li><i class="fa fa-check"></i><span>50+ successfully executed projects</span></li>
+                        <li><i class="fa fa-check"></i><span>Exceptional work quality</span></li>
+                    </ul>
+                </div>
+                <div class="about-img">
+                    <img src="./images/aboutme2.jpg" alt="About Image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES Section -->
+        <section class="services bg-dark" id="services">
+            <div class="heading">
+                <h2 class="section-title"><span>My Services</span></h2>
+                <p class="section-title2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras eu dictum arcu. Aenean viverra venenatis elit, vitae dignissim augue.
+                </p>
+            </div>
+            <div class="container">
+                <div class="box box-1">
+                    <div class="item">
+                        <img src="./images/icons/icon-1.svg" alt="Photography" />
+                        <a href="services-page.html">
+                            <h6>Photography</h6>
+                            <p>Photography Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                    </div>
+                </div>
+                <hr />
+                <div class="box">
+                    <div class="item">
+                        <img src="./images/icons/icon-2.svg" alt="Videography" />
+                        <a href="services-page.html">
+                            <h6>Videography</h6>
+                            <p>Videography bibendum eros amen vacun the vulputate in the vitae miss.</p>
+                        </a>
+                    </div>
+                </div>
+                <hr />
+                <div class="box">
+                    <div class="item">
+                        <img src="./images/icons/icon-3.svg" id="imageId" alt="Photo Retouching" />
+                        <a href="services-page.html">
+                            <h6>Photo Retouching</h6>
+                            <p>Photo Retouching bibenum eros amen vacun the vulputate the vitae miss.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <button class="btn" id="book">Book Now</button>
+            </div>
+        </section>
+
+        <section id="blog">
+
+        </section>
+
+
+        <section class="weather">
+            <div class="container">
+                <input id="city" placeholder="Enter city">
+                <button onclick="getWeather()">Check Weather</button>
+                <p id="weather"></p>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery bg-dark" id="works">
+            <div class="heading">
+                <h2 class="title">My Works</h2>
+            </div>
+            <div class="container">
+                <div class="grid-wrapper">
+                    <div class="image tall"><img src="./images/album/wedding.jpg" alt="Wedding" /></div>
+                    <div class="image wide"><img src="./images/album/market.jpg" alt="Market" /></div>
+                    <div class="image big-img"><img src="./images/album/festival.jpg" alt="Festival" /></div>
+                    <div class="image tall"><img src="./images/album/hangout2.jpg" alt="Hangout" /></div>
+                    <div class="image big-img"><img src="./images/album/wildlife.jpg" alt="Wildlife" /></div>
+                    <div class="image wide"><img src="./images/album/city.jpg" alt="City" /></div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CONTACT -->
+        <section class="contact bg-light" id="contact">
+            <div class="container">
+                <div class="box-left">
+                    <h2 class="title-one" id="title">
+                        <span>Need help with professional photography?</span>
+                        Let's work together!
+                    </h2>
+                    <ul>
+                        <li><i class="fa fa-phone"></i><span>+23412345678</span></li>
+                        <li><i class="fa fa-at"></i><span>simitechfellowship@gmail.com</span></li>
+                        <li><i class="fa fa-location-pin"></i><span>Abuja, Nigeria</span></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <div class="form-box">
+                        <div class="form-title">
+                            <h2 class="">Get in touch</h2>
+                        </div>
+                        <form action="" method="post" id="emailForm">
+                            <div class="one-line">
+                                <div class="box-input">
+                                    <i class="far fa-user"></i>
+                                    <input type="text" id="name" placeholder="Full Name.." />
+                                </div>
+                                <div class="box-input">
+                                    <i class="fa fa-phone"></i>
+                                    <input type="text" id="phone" placeholder="Your phone" />
+                                </div>
+                            </div>
+                            <div class="box-input">
+                                <i class="fa fa-at"></i>
+                                <input type="email" id="email" name="email" placeholder="Email.." />
+                            </div>
+                            <div class="box-input">
+                                <textarea id="message" cols="30" rows="5" placeholder="Your message.."></textarea>
+                            </div>
+
+                            <button class="btn-send" type="submit">Contact us</button>
+                            <p id="emailError" style="color: red; display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="box">
+                <div class="logo-wrapper">
+                    <a class="logo" href="index.html"><strong>Simi</strong>Tech Fellowship</a>
+                </div>
+                <div class="text">
+                    <p>
+                        Photography Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras eu dictum arcu. Aenean viverra venenatis elit, vitae dignissim augue.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3 class="title">Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="box footer-links">
+                <h3 class="title">Contact</h3>
+                <ul>
+                    <li><i class="fa fa-phone"></i><span>+23412345678</span></li>
+                    <li><i class="fa fa-at"></i><span>simitechfellowship@gmail.com</span></li>
+                    <li><i class="fa-solid fa-location-dot"></i><span>Abuja, Nigeria</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2025 by <a href="#">SimiTech</a>. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="./js/home.js"></script>
+
+
+</body>
+
+</html>

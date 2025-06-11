@@ -1,0 +1,563 @@
+/* Another way to import the Poppins font using @import */
+/* @import url('https://fonts.cdnfonts.com/css/poppins'); */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  word-wrap: break-word;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+
+}
+
+/* COMMON STYLING for Most used Elements */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  overflow-x: hidden !important;
+}
+
+.dark-mode {
+  color: #fff;
+}
+
+p {
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75em;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h4 {
+  font-weight: 600;
+  /* line-height: 1.25em; */
+  /* margin: 0 0 20px 0; */
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+img {
+  color: #f4f4f4;
+  height: auto;
+  width: 100%;
+}
+
+
+/* NAV BAR Section */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body.dark-mode .navbar {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark-mode .navbar a {
+  color: #000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.navbar-links {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar-links a:hover {
+  color: goldenrod;
+  font-weight: 700;
+}
+
+.logo-wrapper {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.navbar #darkTheme {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 30px;
+
+}
+
+.dark-mode .navbar #darkTheme i {
+  color: #000;
+}
+
+
+
+
+
+/* HEADER/HERO/LANDING PAGE Section */
+.header {
+  align-items: center;
+  background-image: url("../images/heroimg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.header .container {
+  align-items: center;
+  background-color: #000000d5;
+  color: #fff;
+  display: flex;
+  height: 600px;
+  justify-items: center;
+  width: calc(100% - 0px);
+
+}
+
+body.dark-mode .header .container {
+  background-color: #ffffffd5;
+  color: #000 !important;
+}
+
+.header .container .box {
+  /* max-width: 50%; */
+  min-width: 450px;
+  padding: 0 40px;
+  overflow-x: visible !important;
+}
+
+.header .container .box h1 {
+  text-wrap: nowrap;
+}
+
+.header .container .box p {
+  max-width: 55%;
+}
+
+.header .container .box a.btn {
+  border: 1px solid white;
+  margin: 0 20px 0 0;
+  padding: 10px;
+}
+
+.header .container .box a.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* General Styling for Section */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+section.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+/* ABOUT-ME Section */
+
+.about {
+  background-color: #000000d5;
+  color: #ffffff;
+}
+
+.about .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.about .box {
+  max-width: 50%;
+  min-width: 350px;
+}
+
+.about .title {
+  text-align: left;
+}
+
+.about .title span {
+  display: block;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.about-img {
+  border-radius: 20px;
+  width: 500px;
+}
+
+.about-img img {
+  border-radius: 20px;
+}
+
+.about li {
+  margin-bottom: 20px;
+}
+
+.about ul li i {
+  background-color: #fff;
+  border-radius: 50px;
+  color: #000;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+
+/* SERVICES Section */
+.services {
+  align-items: center;
+  background-color: #000000fe;
+  display: flex;
+  justify-content: center;
+}
+
+.services .heading {
+  text-align: center;
+  width: calc(100% - 200px);
+}
+
+.services .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.services .box {
+  border-left: 1px solid;
+  margin: 0;
+  min-width: 300px;
+  width: 35%;
+}
+
+.services .box.box-1 {
+  border-left: 0;
+}
+
+.services .item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: left;
+}
+
+.services .box .item img {
+  height: 50px;
+  object-fit: cover;
+  overflow: hidden;
+  width: fit-content;
+}
+
+#blog{
+  /* display: none; */
+}
+
+.gallery {
+  background-color: #000;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.grid-wrapper {
+  display: grid;
+  gap: 10px;
+  grid-auto-rows: 200px;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 100%;
+}
+
+.grid-wrapper img {
+  border: 2px solid #fff;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}
+
+.grid-wrapper .image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.grid-wrapper .tall {
+  grid-row: span 2;
+}
+
+.grid-wrapper .wide {
+  grid-column: span 2;
+}
+
+.grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+
+/* CONTACT SECTION */
+.contact {
+  background-image: url('../images/contactimg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #ffffff;
+}
+
+.contact .container {
+  align-items: center;
+  background-color: #000000e5;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  max-height: 100vh;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+.contact .box-left {
+  max-width: 50%;
+  min-width: 300px;
+}
+
+.contact ul {
+  margin: 0;
+  padding: 0;
+}
+
+.contact ul li {
+  padding: 1px 0;
+  margin-bottom: 10px;
+}
+
+.contact .box-left ul li i {
+  margin-right: 10px;
+}
+
+.contact .title span {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 700px;
+}
+
+.contact .form-box {
+  border: 2px solid #fff;
+  padding: 20px;
+  width: 400px;
+}
+
+.contact .form-title {
+  color: goldenrod;
+}
+
+form .box-input {
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+form .box-input input,
+form textarea,
+form input:focus,
+form textarea:focus {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding-left: 10px;
+  resize: none;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #ffffff97;
+}
+
+.contact .btn-send {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #000000ef;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 4rem;
+}
+
+.footer .title,
+.footer .logo {
+  color: #fff;
+  padding: 15px 0;
+}
+
+.footer .text p {
+  color: #bbb;
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+.footer .box {
+  max-width: 450px;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  padding: 1px 0;
+  margin-bottom: 10px;
+}
+
+.footer ul li a,
+.footer ul li span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.footer li i {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.footer .box ul li a:hover,
+.footer-links li i:hover,
+.footer-links li span:hover {
+  color: goldenrod;
+  cursor: pointer;
+
+}
+
+.footer .box li i:hover {
+  border: 1px solid goldenrod;
+}
+
+.copyright {
+  align-items: center;
+  background-color: #000000e9;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 12px;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.copyright p a {
+  color: #f1f1f1;
+}
+
+
+
+.hamburger-menu {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 730px) {
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 60px;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    background-color: #000;
+  }
+
+  .navbar .container {
+    align-items: center;
+    padding: 5px 60px;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+}
