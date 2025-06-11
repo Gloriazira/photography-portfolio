@@ -144,10 +144,6 @@ async function getUsers() {
 //     (error) => { console.log(error); }
 // )
 
-// async function
-// async function myAsyncFunction(){
-//     return "hey People"; // asynchronous operation
-// }
 
 async function fetchPosts() {
     const apiUrl = "https://jsonplaceholder.typicode.com/posts";
